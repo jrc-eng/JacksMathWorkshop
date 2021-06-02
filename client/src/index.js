@@ -4,8 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+import PowerRule from "./containers/Calc/PowerRule"
+
+import Charter from "./containers/Algebra/Charter"
+import MathCalculator from "./containers/Algebra/MathCalculator"
 //Import some React routing.
 import {BrowserRouter, Route} from 'react-router-dom'
+
+require("./index.css")
 
 const AppContainer = () =>
 {
@@ -15,7 +22,9 @@ const AppContainer = () =>
         <BrowserRouter>
 
             <Route component={App} exact path="/" />
-            
+            <Route component={PowerRule} exact path="/calc/powerRule"/>
+            <Route component={Charter} exact path="/algebra/charter" />
+            <Route component={MathCalculator} exact path="/algebra/calculator"></Route>
 
         </BrowserRouter>
     )

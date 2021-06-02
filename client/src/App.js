@@ -1,23 +1,26 @@
+
+import React from "react-dom"
 import logo from './logo.svg';
 import './App.css';
 
+import Jumbo from "./components/Jumbo"
+import NavBar from "./components/NavBar"
+
+require("./App.css")
+
+//App will be the home page.
+//And now, we need to make some pages for the Math Elements!
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Jumbo/>
+      <NavBar supp={"reg"}/>
+
+
+
+
+
+
     </div>
   );
 }

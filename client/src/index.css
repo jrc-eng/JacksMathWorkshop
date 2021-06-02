@@ -11,3 +11,49 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+img
+{
+  height: 25%;
+  width: 25%;
+
+  display: block;
+  margin: 10px auto;
+
+  border: 5px solid black;
+}
+
+p{
+  color: black;
+
+  padding: 10px;
+  margin: 10px
+
+}
+
+h3
+{
+  display: block;
+  margin: 10px auto;
+  padding: 10px
+}
+
+h4
+{
+  display: block;
+  margin: 10px auto;
+  padding:10px;
+}
+
+q{
+  display: block;
+  margin: 10px auto;
+  padding:10px;
+
+}
+quote{
+  display: block;
+  margin: 10px auto;
+  padding:10px;
+
+}
