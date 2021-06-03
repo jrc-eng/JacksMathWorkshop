@@ -4,17 +4,26 @@ import Jumbo from "../../components/Jumbo"
 import NavBar from "../../components/NavBar"
 import {Container, Col, Row} from "react-bootstrap"
 
-import CharterTable from "../../components/CharterTable"
+import { TextField, Button } from "@material-ui/core"
+
+//import DeleteIcon from '@material-ui/icons/Delete';
 
 const Charter = () =>{
 
     const [errorMessage, setErrorMessage] = React.useState("*");
 
-    const [xValues, setXValues] = React.useState([0]);
+    const [xValue, setXValue] = React.useState(0);
 
-    const [yValues, setYValues] = React.useState([0]);
+    const [yValue, setYValue] = React.useState(0);
 
-    const [numberOfPoints, setNumberOfPoints] = React.useState(1);
+
+
+    const AddCurrentPoint = () =>{
+
+
+
+
+    }
 
 
 
@@ -29,8 +38,16 @@ const Charter = () =>{
                 <Row>
                     <Col>
                         <h2>Insert Values Here.</h2>
-                        <CharterTable xValue="X Points" yValue="Y Points"></CharterTable>
                         
+                        X-Value
+                        <TextField type="number"></TextField> <br/>
+                        
+                        Y-Value
+                        <TextField type="number"></TextField>
+
+
+                        {/* Good work.  Now, we need to make a Button to Add the Point, and then make a TABLE to add points with. */}
+                        <Button onClick={() =>{AddCurrentPoint();}} >Add Values</Button>
 
                     </Col>
 
